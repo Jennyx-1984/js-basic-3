@@ -30,7 +30,7 @@ function exponente(a, b) {
 console.log(exponente(2, 3)); // 8
 
 
-
+//EJERCICIO 6
 function modulo(a, b) {
     return "El modulo es: " + (a % b);
 
@@ -98,6 +98,7 @@ function reversedCadena(str) {
     return "La frase al revés es: " + str.split('').reverse().join('');
 }
 console.log(reversedCadena("Hola")); // "aloH"
+console.log(reversedCadena("Hola mundo")); // "odnum aloH"
 
 //EJERCICIO 7
 function countCharacter(str, char) {
@@ -107,7 +108,7 @@ function countCharacter(str, char) {
             count++;
         }
     }
-    return "El número de letras que hay en este string es de :" + count;
+    return `El número de ${char} que hay en este string es de : ${count}`;
 }
 console.log(countCharacter("Hola mundo", "o")); // 2
 
@@ -129,9 +130,9 @@ console.log(esPalindromo("Hola mundo")); // false
 
 //EJERCICIO 10
 function primeraLetraMayuscula(str) {
-    return "La string con la primera en mayúscula es: " + str.charAt(0).toUpperCase() + str.slice(1);
+    return "La string con la primera en mayúscula es: " + str.split(' ').map(palabra => palabra.charAt(0).toUpperCase() + palabra.slice(1)).join(' ');
 }
-console.log(primeraLetraMayuscula("hola mundo")); // "Hola mundo"
+console.log(primeraLetraMayuscula("hola mundo")); // "Hola Mundo"
 
 
 //##ARRAYS
@@ -165,6 +166,7 @@ function mezclarArrays(arr1, arr2) {
     return "Mezcla de los arrays: " + arr1.concat(arr2);
 }
 console.log(mezclarArrays([1, 2, 3], [4, 5, 6])); // [1, 2, 3, 4, 5, 6]
+console.log(mezclarArrays(["a", "b"], ["c", "d"])); // ["a", "b", "c", "d"]
 
 //EJERCICIO 6
 function numeroMaximo(arr) {
