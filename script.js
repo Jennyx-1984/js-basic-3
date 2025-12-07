@@ -1,4 +1,6 @@
-//##NUMEROS
+//############################################################################################
+//#########################################NUMEROS###########################################
+//############################################################################################
 //EJERCICIO 1
 function suma(a, b) {
     return "La suma es: " + (a + b);
@@ -61,8 +63,9 @@ function aleatorio() {
 }
 console.log(aleatorio()); 
 
-
-//##LETRAS
+//############################################################################################
+//###################################LETRAS##################################################
+//###########################################################################################
 //EJERCICIO 1
 function concatenar(str1, str2) {
     return "La concatenación es: " + (str1 + str2);
@@ -130,12 +133,13 @@ console.log(esPalindromo("Hola mundo")); // false
 
 //EJERCICIO 10
 function primeraLetraMayuscula(str) {
-    return "La string con la primera en mayúscula es: " + str.split(' ').map(palabra => palabra.charAt(0).toUpperCase() + palabra.slice(1)).join(' ');
+    return "La string con la primera letra de cada palabra en mayúscula es: " + str.split(' ').map(palabra => palabra.charAt(0).toUpperCase() + palabra.slice(1)).join(' ');
 }
 console.log(primeraLetraMayuscula("hola mundo")); // "Hola Mundo"
 
-
-//##ARRAYS
+//############################################################################################
+//#########################################ARRAYS############################################
+//############################################################################################
 //EJERCICIO 1
 function sumarElementos(arr) {
     return "La suma de los elementos del array es de: " + arr.reduce((acc, curr) => acc + curr, 0);
@@ -208,8 +212,9 @@ function invertirArray(arr) {
 console.log(invertirArray([1, 2, 3, 4, 5])); // [5, 4, 3, 2, 1]
 console.log(invertirArray(["Hola","mundo"])); // ["mundo", "Hola"]
 
-
-//##OBJETOS LITERALES
+//############################################################################################
+//#####################################OBJETOS LITERALES#####################################
+//############################################################################################
 //EJERCICIO 1
 function obtenerNombre(obj) {
     return "Nombre: " + obj.nombre;
